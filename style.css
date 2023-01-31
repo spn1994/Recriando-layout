@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #2C2B3D;/* cor do fundo */
+  width: 100vw; /* largura que vai sobrepor a tela */
+  height: 100vh;/* altura das caixas */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px; /* tamanho letra */
+  line-height: 28px;
+}
+
+h1, a, footer {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+h1 {
+  color: #FFFF;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700; /* pego no figma e no google fonts */
+  margin-bottom: 60px;/* margem em relação ao debaixo */
+}
+
+a {
+  color: #FFFF;
+  text-decoration: none;/* tirou decoração */
+}
+span {
+  color: #00BFA6
+}
+
+.container  {
+  max-width: 1083px; /* largura figma */
+  min-height: 100vh; /* valor minimo definido por imagem */
+  display: flex; /* habilita um do lado do outro */
+  flex-direction: column;/* muda direção para coluna */
+  justify-content: space-between;/* espaço entre eles */
+  margin: 0 auto; /* margens do layout */
+}
+
+header {
+  display: flex; /* habilita um do lado outro */
+  justify-content: space-between; /* espaço entre eles */
+  align-items: center; /* centralizar no centro */
+  padding-top: 71px; /* preenchimento de cima */
+}
+
+nav {
+  display: flex; /* um do lado do utro */
+  gap: 64px; /* espaço entre eles */
+}
+
+nav a {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+main {
+  color: #C2C2C2;
+  text-align: center;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px; /* distancia entre elas */
+}
+
+main p {
+  margin-bottom: 40px; /* margem em relação ao debaixo */
+}
+
+footer {
+  color: #FFFF;
+  text-align: center;
+  font-size: 14px;
+  line-height: 28px;
+  border-top: 1px solid #00BFA6;
+  width: 568px;
+  padding: 27px 0 23px; /* preenchimento pego pelo figma */
+  margin-top: auto;
+  align-self:  center;
+}
+
+#lock {
+  position: fixed;
+  margin: 20px;
+  bottom: 0; /* margem pra fixar pequeno cadeado */
+  left: 0;
+}
